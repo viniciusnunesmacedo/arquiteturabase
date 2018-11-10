@@ -13,10 +13,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArquiteturaBase.Dominio", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArquiteturaBase.Infraestrutura.Dados", "ArquiteturaBase.Infraestrutura.Dados\ArquiteturaBase.Infraestrutura.Dados.csproj", "{A614D429-166A-4780-A072-98E12418E384}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArquiteturaBase.Transversal.Identidade", "ArquiteturaBase.Transversal.Identidade\ArquiteturaBase.Transversal.Identidade.csproj", "{AD33F4AD-4F3C-4631-BF03-45355FED6558}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArquiteturaBase.Transversal.InversaoControle", "ArquiteturaBase.Transversal.InversaoControle\ArquiteturaBase.Transversal.InversaoControle.csproj", "{816D6471-59C3-4801-9F7E-C5420F1EB53A}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{16D7A48E-A1ED-4310-9A5D-0F5E303D5D45}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Apresentação", "1 - Apresentação", "{4CC33F76-D388-456B-BF57-52C5535F4F0D}"
@@ -65,14 +61,6 @@ Global
 		{A614D429-166A-4780-A072-98E12418E384}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A614D429-166A-4780-A072-98E12418E384}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A614D429-166A-4780-A072-98E12418E384}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AD33F4AD-4F3C-4631-BF03-45355FED6558}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AD33F4AD-4F3C-4631-BF03-45355FED6558}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AD33F4AD-4F3C-4631-BF03-45355FED6558}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AD33F4AD-4F3C-4631-BF03-45355FED6558}.Release|Any CPU.Build.0 = Release|Any CPU
-		{816D6471-59C3-4801-9F7E-C5420F1EB53A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{816D6471-59C3-4801-9F7E-C5420F1EB53A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{816D6471-59C3-4801-9F7E-C5420F1EB53A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{816D6471-59C3-4801-9F7E-C5420F1EB53A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CF463667-1A0C-4905-9850-33FE5AE62613}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CF463667-1A0C-4905-9850-33FE5AE62613}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF463667-1A0C-4905-9850-33FE5AE62613}.Release|Any CPU.ActiveCfg = Release|Any CPU
