@@ -1,3 +1,28 @@
+
+Camada ArquiteturaBase.WebApi
+
+Adicionado as referencias:
+
+Swashbuckle.AspNetCore
+MediatR.Extensions.Microsoft.DependencyInjection
+---------------------------------------------------------------------------------------------
+Camada ArquiteturaBase.Infraestrutura.Dados
+
+Adicionado as referencias:
+
+Microsoft.Extensions.Configuration
+Microsoft.Extensions.Configuration.FileExtensions
+Microsoft.Extensions.Configuration.Json
+---------------------------------------------------------------------------------------------
+
+Camada Camada ArquiteturaBase.Infraestrutura.InversaoControle
+
+Adicionado as referencias:
+
+Autofac.Extensions.DependencyInjection
+
+---------------------------------------------------------------------------------------------
+
 Camada ArquiteturaBase.Infraestrutura.Transversal.Identidade
 
 Adicionado as referencias:

@@ -4,4 +4,9 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ArquiteturaBase.Dominio\ArquiteturaBase.Dominio.csproj" />
+    <ProjectReference Include="..\ArquiteturaBase.Infraestrutura.Transversal.Assistentes\ArquiteturaBase.Infraestrutura.Transversal.Assistentes.csproj" />
+  </ItemGroup>
+
 </Project>
