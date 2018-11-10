@@ -49,6 +49,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArquiteturaBase.Gerador", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArquiteturaBase.Infraestrutura.Transversal.Assistentes", "ArquiteturaBase.Infraestrutura.Transversal.Assistentes\ArquiteturaBase.Infraestrutura.Transversal.Assistentes.csproj", "{EB77CC0B-BCD6-4383-83ED-48AFA1975470}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArquiteturaBase.UI.Site.Angular", "ArquiteturaBase.UI.Site.Angular\ArquiteturaBase.UI.Site.Angular.csproj", "{99296F45-19D4-4DD6-AD18-C5D44973B2EA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -95,6 +97,10 @@ Global
 		{EB77CC0B-BCD6-4383-83ED-48AFA1975470}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB77CC0B-BCD6-4383-83ED-48AFA1975470}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB77CC0B-BCD6-4383-83ED-48AFA1975470}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99296F45-19D4-4DD6-AD18-C5D44973B2EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99296F45-19D4-4DD6-AD18-C5D44973B2EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99296F45-19D4-4DD6-AD18-C5D44973B2EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99296F45-19D4-4DD6-AD18-C5D44973B2EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -122,6 +128,7 @@ Global
 		{F29A5518-12B0-4A3A-AF75-EAFD296EED31} = {4CC33F76-D388-456B-BF57-52C5535F4F0D}
 		{9036CDF9-066D-4044-94FC-7DD2C67587DE} = {BE86236C-D958-4F99-A634-0DDB9222239A}
 		{EB77CC0B-BCD6-4383-83ED-48AFA1975470} = {78700623-11F1-440E-B6FA-C2AADC927AFC}
+		{99296F45-19D4-4DD6-AD18-C5D44973B2EA} = {F29A5518-12B0-4A3A-AF75-EAFD296EED31}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7C8F72A5-99A1-4B7C-B512-DF07985F2B04}
