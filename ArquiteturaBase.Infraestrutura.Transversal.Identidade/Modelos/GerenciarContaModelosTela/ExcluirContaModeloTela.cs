@@ -1,13 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ArquiteturaBase.Infraestrutura.Transversal.Identidade.Modelos.GerenciarContaModelosTela
+﻿namespace ArquiteturaBase.Infraestrutura.Transversal.Identidade.Modelos.GerenciarContaModelosTela
 {
+    /// <summary>
+    /// RemoveLoginViewModel
+    /// </summary>
     public class ExcluirContaModeloTela
     {
-        
+        public string FornecedorContaUsuario { get; set; }
+        public string FornecedorChave { get; set; }
     }
 }
