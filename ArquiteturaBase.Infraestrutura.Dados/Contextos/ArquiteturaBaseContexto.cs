@@ -9,6 +9,8 @@ namespace ArquiteturaBase.Infraestrutura.Dados.Contextos
     {
         protected override void OnModelCreating(ModelBuilder construtorModelo)
         {
+            construtorModelo.ApplyConfiguration(new PedidoMap());
+            construtorModelo.ApplyConfiguration(new PedidoItemMap());
             construtorModelo.ApplyConfiguration(new ProdutoMap());
 
             base.OnModelCreating(construtorModelo);

@@ -40,12 +40,12 @@ namespace ArquiteturaBase.WebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public IServiceProvider ConfigureServices(IServiceCollection services)
         {
-            //services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-            services.AddWebApi(options =>
-            {
-                options.OutputFormatters.Remove(new XmlDataContractSerializerOutputFormatter());
-                options.UseCentralRoutePrefix(new RouteAttribute("api/v{version}"));
-            });
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            //services.AddWebApi(options =>
+            //{
+            //    options.OutputFormatters.Remove(new XmlDataContractSerializerOutputFormatter());
+            //    options.UseCentralRoutePrefix(new RouteAttribute("api/v{version}"));
+            //});
 
             services.AddAuthorization(options =>
             {
@@ -91,8 +91,9 @@ namespace ArquiteturaBase.WebApi
                 c.AllowAnyOrigin();
             });
 
-            app.UseStaticFiles();
-            app.UseAuthentication();
+            ////app.UseStaticFiles();
+            //app.UseAuthentication();
+            app.UseHttpsRedirection();
             app.UseMvc();
 
             app.UseSwagger();

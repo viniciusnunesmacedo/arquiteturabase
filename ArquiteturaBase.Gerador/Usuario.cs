@@ -38,6 +38,10 @@ namespace ArquiteturaBase.Gerador
         // Reverse navigation
 
         /// <summary>
+        /// Child Pedidoes where [Pedido].[UsuarioId] point to this entity (FK_Pedido_Usuario_UsuarioId)
+        /// </summary>
+        public virtual System.Collections.Generic.ICollection<Pedido> Pedidoes { get; set; } // Pedido.FK_Pedido_Usuario_UsuarioId
+        /// <summary>
         /// Child Perfils (Many-to-Many) mapped by table [UsuarioPerfil]
         /// </summary>
         public virtual System.Collections.Generic.ICollection<Perfil> Perfils { get; set; } // Many to many mapping
@@ -56,6 +60,7 @@ namespace ArquiteturaBase.Gerador
 
         public Usuario()
         {
+            Pedidoes = new System.Collections.Generic.List<Pedido>();
             UsuarioAtributoes = new System.Collections.Generic.List<UsuarioAtributo>();
             UsuarioProvedors = new System.Collections.Generic.List<UsuarioProvedor>();
             UsuarioProvedorLogins = new System.Collections.Generic.List<UsuarioProvedorLogin>();

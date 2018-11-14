@@ -1,9 +1,15 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace ArquiteturaBase.Dominio.Modelos
 {
     public class Produto
     {
+        public Produto()
+        {
+            PedidoItens = new List<PedidoItem>();
+        }
+
         public int Id { get; set; } 
         public string Categoria { get; set; }
         public string Tamanho { get; set; } 
@@ -16,5 +22,8 @@ namespace ArquiteturaBase.Dominio.Modelos
         public DateTime ArtistaNascimento { get; set; }
         public DateTime ArtistaMorte { get; set; }
         public string ArtistaNacionalidade { get; set; }
+
+        // Navegação Reversa
+        public virtual ICollection<PedidoItem> PedidoItens { get; set; }
     }
 }

@@ -21,6 +21,8 @@ namespace ArquiteturaBase.Gerador
     public class MyDbContext : System.Data.Entity.DbContext, IMyDbContext
     {
         public System.Data.Entity.DbSet<EfMigrationsHistory> EfMigrationsHistories { get; set; } // __EFMigrationsHistory
+        public System.Data.Entity.DbSet<Pedido> Pedidoes { get; set; } // Pedido
+        public System.Data.Entity.DbSet<PedidoItem> PedidoItems { get; set; } // PedidoItem
         public System.Data.Entity.DbSet<Perfil> Perfils { get; set; } // Perfil
         public System.Data.Entity.DbSet<PerfilAtributo> PerfilAtributoes { get; set; } // PerfilAtributo
         public System.Data.Entity.DbSet<Produto> Produtoes { get; set; } // Produto
@@ -78,6 +80,8 @@ namespace ArquiteturaBase.Gerador
             base.OnModelCreating(modelBuilder);
 
             modelBuilder.Configurations.Add(new EfMigrationsHistoryConfiguration());
+            modelBuilder.Configurations.Add(new PedidoConfiguration());
+            modelBuilder.Configurations.Add(new PedidoItemConfiguration());
             modelBuilder.Configurations.Add(new PerfilConfiguration());
             modelBuilder.Configurations.Add(new PerfilAtributoConfiguration());
             modelBuilder.Configurations.Add(new ProdutoConfiguration());
@@ -90,6 +94,8 @@ namespace ArquiteturaBase.Gerador
         public static System.Data.Entity.DbModelBuilder CreateModel(System.Data.Entity.DbModelBuilder modelBuilder, string schema)
         {
             modelBuilder.Configurations.Add(new EfMigrationsHistoryConfiguration(schema));
+            modelBuilder.Configurations.Add(new PedidoConfiguration(schema));
+            modelBuilder.Configurations.Add(new PedidoItemConfiguration(schema));
             modelBuilder.Configurations.Add(new PerfilConfiguration(schema));
             modelBuilder.Configurations.Add(new PerfilAtributoConfiguration(schema));
             modelBuilder.Configurations.Add(new ProdutoConfiguration(schema));

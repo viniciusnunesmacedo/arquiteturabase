@@ -18,6 +18,8 @@ namespace ArquiteturaBase.Gerador
     public interface IMyDbContext : System.IDisposable
     {
         System.Data.Entity.DbSet<EfMigrationsHistory> EfMigrationsHistories { get; set; } // __EFMigrationsHistory
+        System.Data.Entity.DbSet<Pedido> Pedidoes { get; set; } // Pedido
+        System.Data.Entity.DbSet<PedidoItem> PedidoItems { get; set; } // PedidoItem
         System.Data.Entity.DbSet<Perfil> Perfils { get; set; } // Perfil
         System.Data.Entity.DbSet<PerfilAtributo> PerfilAtributoes { get; set; } // PerfilAtributo
         System.Data.Entity.DbSet<Produto> Produtoes { get; set; } // Produto

@@ -21,6 +21,8 @@ namespace ArquiteturaBase.Gerador
     public class FakeMyDbContext : IMyDbContext
     {
         public System.Data.Entity.DbSet<EfMigrationsHistory> EfMigrationsHistories { get; set; }
+        public System.Data.Entity.DbSet<Pedido> Pedidoes { get; set; }
+        public System.Data.Entity.DbSet<PedidoItem> PedidoItems { get; set; }
         public System.Data.Entity.DbSet<Perfil> Perfils { get; set; }
         public System.Data.Entity.DbSet<PerfilAtributo> PerfilAtributoes { get; set; }
         public System.Data.Entity.DbSet<Produto> Produtoes { get; set; }
@@ -36,6 +38,8 @@ namespace ArquiteturaBase.Gerador
             _database = null;
 
             EfMigrationsHistories = new FakeDbSet<EfMigrationsHistory>("MigrationId");
+            Pedidoes = new FakeDbSet<Pedido>("Id");
+            PedidoItems = new FakeDbSet<PedidoItem>("Id");
             Perfils = new FakeDbSet<Perfil>("Id");
             PerfilAtributoes = new FakeDbSet<PerfilAtributo>("Id");
             Produtoes = new FakeDbSet<Produto>("Id");

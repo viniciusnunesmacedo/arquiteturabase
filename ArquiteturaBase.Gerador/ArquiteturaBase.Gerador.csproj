@@ -75,6 +75,18 @@
     <Compile Include="MyDbContextFactory.cs">
       <DependentUpon>Database1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Pedido.cs">
+      <DependentUpon>Database1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PedidoConfiguration.cs">
+      <DependentUpon>Database1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PedidoItem.cs">
+      <DependentUpon>Database1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PedidoItemConfiguration.cs">
+      <DependentUpon>Database1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Perfil.cs">
       <DependentUpon>Database1.tt</DependentUpon>
     </Compile>

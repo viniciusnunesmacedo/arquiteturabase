@@ -31,6 +31,18 @@ namespace ArquiteturaBase.Gerador
         public System.DateTime ArtistaNascimento { get; set; } // ArtistaNascimento
         public System.DateTime ArtistaMorte { get; set; } // ArtistaMorte
         public string ArtistaNacionalidade { get; set; } // ArtistaNacionalidade
+
+        // Reverse navigation
+
+        /// <summary>
+        /// Child PedidoItems where [PedidoItem].[ProdutoId] point to this entity (FK_PedidoItem_Produto_ProdutoId)
+        /// </summary>
+        public virtual System.Collections.Generic.ICollection<PedidoItem> PedidoItems { get; set; } // PedidoItem.FK_PedidoItem_Produto_ProdutoId
+
+        public Produto()
+        {
+            PedidoItems = new System.Collections.Generic.List<PedidoItem>();
+        }
     }
 
 }
